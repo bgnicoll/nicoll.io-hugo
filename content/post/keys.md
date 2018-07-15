@@ -1,10 +1,10 @@
 +++
 author = "Brandon Nicoll"
-categories = ["AWS", "Automation"]
 date = 2015-08-29T23:56:29Z
 description = ""
 draft = false
 slug = "keys"
+image = "/IAMKeys-1.jpg"
 tags = ["AWS", "Automation"]
 title = "Automating with the Amazon Web Services API: Keys"
 
@@ -45,7 +45,7 @@ An IAM policy is a JSON representation of what a user can and can not do within 
 ![](/CreatePolicy.jpg)
 Here we can write a JSON block explicitly calling out what this policy will allow/disallow. An in-depth explanation of the syntax can be found at the [Policy Grammar page](http://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_grammar.html) of the IAM user guide. Something else of note is the way in which we reference AWS resources when granting permissions, [Amazon Resource Names(ARNs) and AWS Service Namespaces](http://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html). We can specify entire AWS products to grant/deny the permission to all the way down to individual resources. To keep this simple, I'm going to create a policy that allows access to all EC2 resources. 
 
-```prettyprint lang-json
+{{< highlight json >}}
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -56,7 +56,7 @@ Here we can write a JSON block explicitly calling out what this policy will allo
         }
     ]
 }
-```
+{{< / highlight >}}
 
 ### Looking for Group
 Next we're going to create a group that we can apply a policy to. To avoid duplication of work later, it is considered good practice to add users to groups and apply policies to the groups instead of individual users. Go to the [Groups](https://console.aws.amazon.com/iam/home#groups) page under IAM and click "Create New Group". Give the group a name, click "Next Step" and here we can find the policy we just created, along with many pre-baked policies provided by Amazon. Click "Next Step" and create the group.

@@ -1,6 +1,5 @@
 +++
 author = "Brandon Nicoll"
-categories = ["Redis"]
 date = 2017-02-26T06:07:25Z
 description = ""
 draft = false
@@ -88,7 +87,7 @@ After all this planning and research, it's nice to know that the hard work is pa
 <label style="text-align: center; display: block;">**Figure 8.) Seven day average latency data from New Relic**</label>
 
 This feature has been my all-time favorite piece of software to write and it is certainly the thing I'm most proud of in my career. I couldn't have done it without the help of my teammates, [Piper Lawson](https://twitter.com/uxpiper) (UX\UI) and [Reed Rizzo](https://twitter.com/reedling78) (Front End Developer). Without them, this feature would have looked something like this:
-```prettyprint lang-json
+{{< highlight json >}}
 {
   "TotalResults": 20829,
   "Families": [
@@ -106,7 +105,7 @@ This feature has been my all-time favorite piece of software to write and it is 
     }
   ]
 }
-```
+{{< / highlight >}}
 <label style="text-align: center; display: block;">**Figure 9.) Nobody wants to buy fonts this way**</label>
 
 We hope you enjoy using this tool as much as we enjoyed building it!

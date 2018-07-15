@@ -1,12 +1,12 @@
 +++
 author = "Brandon Nicoll"
-categories = ["OctopusDeploy"]
 date = 2016-02-05T01:21:34Z
 description = ""
 draft = false
 slug = "octo-progression"
-tags = ["OctopusDeploy"]
+tags = ["Octopus Deploy"]
 title = "Querying Release Progression from the Octopus Deploy API"
+image = "/OctopusProgressionHeader.png"
 
 +++
 

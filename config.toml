@@ -14,12 +14,12 @@ paginate = 5
   page = "/:slug/"
 
 [[menu.sidebar]]
-  name = "Link 1"
-  url = "https://example.com"
+  name = "My Twitter"
+  url = "https://twitter.com/bgnicoll"
 
 [[menu.sidebar]]
-  name = "Link 2"
-  url = "https://example.org"
+  name = "GitHub Projects"
+  url = "https://github.com/bgnicoll"
 
 #[[menu.navbar]]
 #  name = "Link 1"

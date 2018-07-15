@@ -1,12 +1,12 @@
 +++
 author = "Brandon Nicoll"
-categories = ["Redis"]
 date = 2016-03-19T23:15:08Z
 description = ""
 draft = false
 slug = "ha-cache"
 tags = ["Redis"]
 title = "High Availability Web Server Caching with Redis"
+image = "/CacheMoney.png"
 
 +++
 

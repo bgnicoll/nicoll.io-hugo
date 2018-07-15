@@ -1,6 +1,5 @@
 +++
 author = "Brandon Nicoll"
-categories = ["Google Cloud Platform", "buttercms"]
 date = 2017-09-21T18:05:04Z
 description = ""
 draft = false

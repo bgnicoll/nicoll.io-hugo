@@ -5,6 +5,7 @@ description = ""
 draft = false
 slug = "mongottl"
 title = "Automatic Data Purging with MongoDB TTL"
+image = "/Title.jpg"
 
 +++
 
@@ -23,7 +24,7 @@ Oftentimes, a collection will have been designed with some audit trail informati
 
 I'm using [Mongoose][4] in my project, so in order to create the index, all I have to do is add 'expires' to 'createDate':
 
-```prettyprint lang-js
+{{< highlight js >}}
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
@@ -39,12 +40,12 @@ var doomedDataSchema = new Schema({
     modifiedDate: Date
   }
 });
-```
+{{< / highlight >}}
 
 My complicated math formula will set the document to be deleted after thirty days. According to the [API docs][5] on this subject, we don't need to specify an ugly number, but can substitute with an easier-to-read string value, like so:
-```prettyprint lang-js
+{{< highlight js >}}
     createDate:  { type: Date, expires: '30d'}, 
-```
+{{< / highlight >}}
 That's it! Next time our code is started, the Mongoose schema will use the [ensureIndex][6] command behind the scenes to create the index if it doesn't already exist. The service that removes expired documents runs every 60 seconds.
 
 ### Conclusion
