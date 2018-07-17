@@ -8,3 +8,37 @@
 
 // local style overrides
 @import 'source/scss/main';
+
+@font-face{
+    font-family:"Caecilia LT W01_55 Roman";
+    src:url("../fonts/348d260c-3ba9-4ace-bd1d-9b87aa4a30c8.eot?#iefix");
+    src:url("../fonts/348d260c-3ba9-4ace-bd1d-9b87aa4a30c8.eot?#iefix") format("eot"),url("../fonts/f76cabb2-d3fd-4c8e-827b-16e172495edd.woff2") format("woff2"),url("../fonts/158192e0-0b66-436f-8b21-911f9c5e7371.woff") format("woff"),url("../fonts/70e04de3-0751-4859-8bee-6751e6da233b.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Gill Sans W04 Book";
+    src:url("../fonts/c4be5717-c19c-43a5-9ad3-b548ddf070d4.eot?#iefix");
+    src:url("../fonts/c4be5717-c19c-43a5-9ad3-b548ddf070d4.eot?#iefix") format("eot"),url("../fonts/4bfd13a9-3195-4d8f-87a9-83a212d18b16.woff2") format("woff2"),url("../fonts/63aa9f40-04be-453a-a672-aa8f9919115d.woff") format("woff"),url("../fonts/a82a5fb6-ad03-4675-801e-d3182a58ff5f.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Neue Kabel W01 Bold";
+    src:url("../fonts/22d39f48-6ebf-4aa2-a803-e8aa85aaa835.eot?#iefix");
+    src:url("../fonts/22d39f48-6ebf-4aa2-a803-e8aa85aaa835.eot?#iefix") format("eot"),url("../fonts/750b062a-1d0a-4ba2-9a5b-571c7d4153ee.woff2") format("woff2"),url("../fonts/92820db1-6935-4885-b266-15cc6f1091ce.woff") format("woff"),url("../fonts/d091f126-9ae7-45b5-a89a-5de45985b360.ttf") format("truetype");
+}
+
+body {
+    font-family: 'Gill Sans W04 Book', 'sans-serif';
+    font-size: 17pt;
+  }
+  
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
+    font-family: 'Neue Kabel W01 Bold', 'sans-serif';
+  }
+
+  strong {
+    font-family: 'Neue Kabel W01 Bold', 'sans-serif';
+  }

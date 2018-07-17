@@ -36,7 +36,7 @@ As you may have noticed, Redis SETs are *unordered* lists of strings. The browse
 
 Luckily, we have another Redis data structure that can help. ZSETs ([https://redis.io/topics/data-types#sorted-sets](https://redis.io/topics/data-types#sorted-sets)) are sets that contain one additional piece of information, a numerical score. This data structure allowed me to pre-compute the complete order each family should appear in. 
 
-<img src="/SortZSETs-2.png" alt="" style="display: block;margin: auto;">
+<img src="/Sort-ZSETs-2.png" alt="" style="display: block;margin: auto;">
 <label style="text-align: center; display: block;">**Table 2.) Example visualization of Redis ZSETs storing sorted family IDs**</label>
 
 ### Intersects and Unions
