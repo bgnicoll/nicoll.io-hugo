@@ -6,7 +6,7 @@ draft = false
 slug = "octo-progression"
 tags = ["Octopus Deploy"]
 title = "Querying Release Progression from the Octopus Deploy API"
-image = "/OctopusProgressionHeader.png"
+thumbnail = "/OctopusProgressionHeader.png"
 
 +++
 
@@ -21,7 +21,7 @@ This saved a lot of time as the JSON output from this API was fairly large and c
 ### Querying Progressions
 In my situation, I know the Octopus Release ID ahead of time, so I'm able to query for progressions with code that looks something like this:
 
-```prettyprint lang-csharp
+{{< highlight csharp >}}
 var octoServer = ConfigurationManager.AppSettings["OctopusServer"];
 var apiKey = ConfigurationManager.AppSettings["OctopusAPIKey"];
 var octoEndpoint = new OctopusServerEndpoint(octoServer, apiKey);
@@ -46,7 +46,7 @@ if (octoRelease.HasLink("Progression"))
         octoProgression = JsonConvert.DeserializeObject<OctopusProgressionResponse>(responseString);
     }
 }
-```
+{{< / highlight >}}
 
 ### Conclusions
 It's a bit of a let-down that this functionality is hidden so deeply, as it can be very useful while building tools that work in tandem with Octopus to keep track of where different versions of your software are at in the release process. The good news is that with a little bit of extra effort, we are able to extract this information from the Octopus API. Overall, I've been very impressed with the Octopus Deploy dev team's efforts to be "[API-first](http://docs.octopusdeploy.com/display/OD/Octopus+REST+API)"; using the Octopus.Client library is mostly a breeze. 
