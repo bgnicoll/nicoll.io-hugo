@@ -5,7 +5,7 @@ theme = "hugo-theme-bootstrap4-blog"
 # number of posts to show on home/category/tag pages (Default: 10)
 paginate = 5
 # optionally override the site's footer with custom copyright text
- copyright = "All content copyright <a href=' https://nicoll.io/'>Brandon Nicoll</a> © 2020 • All rights reserved."
+ copyright = "All content copyright <a href=' https://nicoll.io/'>Brandon Nicoll</a> © 2022 • All rights reserved."
 googleAnalytics = "UA-75452019-1"
 #disqusShortname = "XYW"
 
